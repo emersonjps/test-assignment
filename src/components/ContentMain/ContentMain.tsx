@@ -29,7 +29,7 @@ export default function ContentMain() {
         </div>
 
         <section className="comment_user  p-6">
-          <div className="flex gap-3 items-center">
+          <div className="flex gap-3 items-center mt-11">
             <Image alt="profileUser" src={profileUser} width={48} height={48} />
             <div>
               <Image alt="stars" src={stars} width={78} height={12} />
