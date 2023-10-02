@@ -3,25 +3,112 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primay-color: #252f3d;
+  --secundary-color: #252f3d;
+  --text-white-color: #ffffff;
+  --text-black-color: #000000;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.my_nav {
+  background-color: var(--primay-color);
+  color: var(--text-white-color);
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  text-transform: capitalize;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.my_footer {
+  background-color: var(--primay-color);
+  color: var(--text-white-color);
+  padding: 24px 119px 24px 127px;
+  justify-content: space-between;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  text-transform: lowercase;
+}
+
+.text_steps {
+  font-family: Manrope;
+}
+
+.text_steps_blue {
+  color: #2c7ef8;
+}
+
+.style_manrope {
+  font-family: Manrope;
+}
+
+.text_verify {
+  color: #5bb59a;
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+}
+
+.typografia {
+  color: #4d5254;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+.comment_user {
+  width: 575px;
+}
+
+.title_section2 {
+  color: #000;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Manrope;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+
+.span_blue {
+  color: #2c7ef8;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Manrope;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 44.8px */
+  text-transform: capitalize;
+}
+
+.price1 {
+  color: #969696;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: strikethrough;
+  text-transform: capitalize;
+}
+
+.price2 {
+  color: #2c7ef8;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Manrope;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 30.8px */
+  text-transform: capitalize;
 }
