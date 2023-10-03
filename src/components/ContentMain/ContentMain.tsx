@@ -23,7 +23,7 @@ import satisfy from "@/assets/img/content2/image 6.png";
 export default function ContentMain() {
   return (
     <article className="main flex">
-      <section>
+      <section className="my_hidden">
         <div>
           <Image alt="imgContet" src={imgContet} width={575} height={591} />
         </div>
@@ -144,16 +144,18 @@ export default function ContentMain() {
           </div>
         </div>
 
-        <div className="particion_cards flex items-center  gap-4">
-          <p>Free shipping |</p>
-          <Image
-            className="-mr-3"
-            alt="lock"
-            src={lock}
-            width={12}
-            height={12}
-          />
-          <p>Secure 256-bit SSL encryption. |</p>
+        <div className="particion_cards flex items-center gap-4">
+          <div className="flex items-center gap-4">
+            <p>Free shipping |</p>
+            <Image
+              className="-mr-3"
+              alt="lock"
+              src={lock}
+              width={12}
+              height={12}
+            />
+            <p>Secure 256-bit SSL encryption. |</p>
+          </div>
 
           <div className="flex items-center">
             <Image alt="visa" src={visa} width={24} height={14} />
@@ -171,7 +173,13 @@ export default function ContentMain() {
         </div>
 
         <div className="satisfy flex">
-          <Image alt="satisfy" src={satisfy} width={88} height={88} />
+          <Image
+            className="mr-4"
+            alt="satisfy"
+            src={satisfy}
+            width={88}
+            height={88}
+          />
           <p>
             If you are not completely thrilled with your Clarifion - We have a
             <span> 30 day satisfaction guarantee</span>. Please refer to our

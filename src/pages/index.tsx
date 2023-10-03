@@ -10,7 +10,7 @@ export default function Home() {
       <NavBar />
       <Header />
 
-      <div className="inline-flex flex-col gap-6 items-center min-w-full">
+      <div className="my_title inline-flex flex-col gap-6 items-center min-w-full">
         <h1 className="text-5xl">Wait ! your order in progress.</h1>
         <h2 className="text-2xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing{" "}
